@@ -12,14 +12,14 @@ int main()
 {
 
   //Assign and declare variables.
-  int max_length = 40; //Max length for the rectangle.
-  int length;
+  int max_length = 40, //Max length for the rectangle.
+      length;
   std::string hashtag;
   
   //Random number generator using epoch time.
   length = time(0) % max_length + 1;
   
-  //Assign string
+  //Assign the length to the hashtag string,.
   hashtag.assign(length, '#');
 
   //Output statements.
