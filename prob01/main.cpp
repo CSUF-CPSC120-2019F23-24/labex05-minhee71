@@ -44,7 +44,7 @@ int main()
   float f3 = 3.5E38;
 
   // TODO#3 add comment describing what happened
-  std::cout << "\nUnderflow occurs when a value is too close to zero and there are not enough significant digits to properly express the store value." << std::endl;
+  std::cout << "\n4 bytes of memory space is enough enough to contain such a large number. Thus \'inf\' is diplayed to signify that the number larger than can be stored in memory." << std::endl;
   std::cout << std::setprecision(1);
   std::cout << sizeof(d3) << " bytes, value: " << d3 << std::endl;
   std::cout << sizeof(f2) << " bytes, value: " << f3 << std::endl;
