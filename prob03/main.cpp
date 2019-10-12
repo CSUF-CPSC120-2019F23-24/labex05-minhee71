@@ -11,13 +11,16 @@ int main()
 
 {
 
-  //Assign and declare variables.
-  int max_length = 40, //Max length for the rectangle.
-      length;
+  //Assign and declare variables and constants.
+  int length;
+  const int MAX_LENGTH = 40; //Max length for the rectangle.
   std::string hashtag;
   
   //Random number generator using epoch time.
-  length = time(0) % max_length + 1;
+  //length = time(0) % MAX_LENGTH + 1;
+  
+  srand(time(0));
+  length = rand() % MAX_LENGTH + 1;
   
   //Assign the length to the hashtag string,.
   hashtag.assign(length, '#');
@@ -30,4 +33,3 @@ int main()
     
 return 0;
 }
-
